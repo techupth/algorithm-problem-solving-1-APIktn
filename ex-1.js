@@ -6,7 +6,7 @@ function twoSum(numbers, result) {
     let sum = numbers[left] + numbers[right];
 
     if (sum === result) {
-      return [numbers[left], numbers[right]];
+      return [left, right];
     } else if (sum < result) {
       left++;
     } else {
